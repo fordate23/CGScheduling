@@ -1,0 +1,17 @@
+This open-sourced project is for the paper "Resource Optimization with 5G Configured Grant Scheduling for
+Real-Time Applications", which contains the main content of the "SMT solution", the heuristic approaches (CoU and Co1)
+and the auxiliary function for completing the experimental process such as communication model and application model.
+
+Five models are listed as follows:
+    1. DataGeneration:      for the communication & application model
+    2. SMTSolution:         for the SMT solution
+    3. Heuristic:           for the algorithm "CoU"
+    4. NaiveApproach:       for the algorithm "Co1" and the "FCFS" approach
+    5. Result analyze:      for generating analyze reports
+
+Prerequisites:
+    1. Z3 solver with Python, using "z3-solver" package
+    2. Numpy package
+
+How to get started?
+    1.
