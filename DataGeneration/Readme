@@ -1,0 +1,17 @@
+1. Descriptions:
+    main.py -- main program for SMT solver, the results are saved in directory 'results'
+    TF.py   -- class for traffic flow which is used by main.py to organize the information of traffic flows
+    meta_configuration.py   -- when generating samples, this file would provide basic setting information
+    tf_configurations_generating.py --  generate settings for traffic flows, the results are saved in
+                                        directory 'tf_configurations'
+    invoke.py   --  invoke main.py with traffic flow settings
+
+
+2. Basic instruction:
+    1) modify 'meta_configuration.py' if needed
+    2) execute 'tf_configurations_generating.py' to generate traffic flow settings, each file consists
+        of several traffic flows which is used as the input of 'main.py'
+    3) execute 'invoke.py' to run the SMT solver automatically
+    4) check the results in directory 'results'
+
+

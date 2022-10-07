@@ -1,0 +1,27 @@
+1. Descriptions:
+    1) SMTSolver.py    -- main program for SMT solver, the results are saved in directory 'results'
+    2) TF.py           -- class for traffic flow which is used by SMTSolver.py to organize the information of traffic flows
+    3) results(folder) -- storing the output for each SMT case that contains the detailed schedule information
+    4) results.txt     -- format: []
+    5) solvingtime.txt -- format: []
+
+2. Basic instruction:
+    1) generate traffic flows using utilities from "DataGeneration"
+    2) use "invoke.py" from folder "DataGeneration" to invoke the "SMTSolver.py"
+        with different traffic flow configurations
+    3) check the results in folder "results", file "results.txt", and file "solvingtime.txt"
+
+3. Prerequisites:
+    1) install python package 'z3-solver'
+
+4. Additional information:
+    The current SMT model can still supports more advanced scheduling requirements, such as
+        a. the maximum number of configurations (adding tight constraints on the control overhead),
+        b. the number of replicas for each data packet (using repetition technique to enhance reliability), and
+        c. the number of time slots between two adjacent replicas for each data packet (indicated by 5G standard,
+        there could be the interval occupying several time slots or symbols between two replicas)
+
+        The above advanced scheduling requirements are not considered at the model in our paper at this moment.
+
+
+
