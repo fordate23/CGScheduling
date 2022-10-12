@@ -14,4 +14,6 @@ Prerequisites:
     2. Numpy package
 
 How to get started?
-    1.
+    1. Use the scripts "application_parameter.py" and "test_data_generation.py" in "DataGeneration" to generate data samples
+    2. Invoke SMT/Heuristic approaches with the scripts "invoke.py"
+    3. Use the scripts in "ResultAnalyze" to analyze the results
